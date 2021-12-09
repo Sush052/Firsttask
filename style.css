@@ -1,0 +1,159 @@
+/* body {
+  background-color: gray;
+} */
+header {
+  font-family: monospace;
+  font-size: 20px;
+  display: flex;
+  list-style: none;
+  justify-content: flex-start;
+  padding: 1rem;
+  gap: 1rem;
+}
+header a {
+  text-decoration: none;
+}
+
+header a:hover {
+  color: white;
+}
+.header a {
+  padding: 7.5px 15px;
+  background: gray;
+
+  border-radius: 50em;
+  color: black;
+}
+.log {
+  display: block;
+  margin: auto;
+}
+
+.svgicons {
+  /* padding: 2px; */
+
+  background: none;
+  border: none;
+  border-radius: none;
+  color: black;
+}
+.icons {
+  position: absolute;
+  right: 12vh;
+  top: 14vh;
+}
+.footer {
+  padding-top: 30px;
+  background-color: gray;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  color: white;
+  line-height: 1.5em;
+}
+.last a {
+  line-height: 1.7em;
+}
+.rest-footer {
+  display: grid;
+  line-height: 1.5em;
+  column-gap: 50px;
+  padding-left: 40px;
+}
+.footer a {
+  text-decoration: none;
+  color: white;
+}
+.first {
+  padding-left: 60px;
+}
+
+/* productlist */
+.productlist {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-gap: 1rem;
+  align-items: center;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+/*productpage*/
+.productpage {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 6rem;
+}
+.productname {
+  display: block;
+  margin: auto;
+}
+.price {
+  display: block;
+  margin: auto;
+}
+/* .bag{
+    display: grid;
+    grid-template-row: 1fr 1fr;
+  } */
+
+.description {
+  font-size: 1.3rem;
+}
+.des {
+  margin: 5em;
+}
+
+/*add button style*/
+.cart {
+  background-color: #7bafd4bf; /* Green */
+  border: none;
+  color: black;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  box-shadow: 0 2px #999;
+}
+
+.addminus {
+  display: inline-block;
+  display: flex;
+}
+
+#poke1 {
+  padding: 1em;
+}
+#poke2 {
+  padding: 1em;
+}
+#counter {
+  padding: 1em 0;
+}
+.plus {
+  border: none;
+  color: black;
+  padding: 1px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 15px;
+  font-family: "Roboto", sans-serif;
+  box-shadow: 0 2px #999;
+}
+#price {
+  margin: 20px;
+}
+button:hover {
+  background-color: #ce8282;
+}
+.bullets {
+  box-shadow: 10px 10px 5px grey;
+}
+/* .productimage {
+  box-shadow: 2px 10px 5px grey;
+} */
