@@ -18,6 +18,8 @@ function handleProductList(data) {
   data.forEach(showProduct);
 }
 
+// Product name display vayena
+
 function showProduct(product) {
   console.log(product);
   const template = document.querySelector("#smallProductTemplate").content;

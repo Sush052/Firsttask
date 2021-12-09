@@ -15,6 +15,9 @@ fetch(url, options)
   .then(function (data) {
     productlist(data);
   });
+
+//Product name image description kei fetch vayena ki k vayo k ??
+
 function productlist(product) {
   console.log(product);
   document.querySelector("a").href = "productpage.html?id=" + product.id;
