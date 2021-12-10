@@ -15,40 +15,35 @@ fetch(url, options)
 
   .then(function (data) {
     productlist(data);
-
   });
-
-//Product name image description kei fetch vayena ki k vayo k ??
 
 function productlist(products) {
-
-
-  let product = products.filter(element => {
-
+  let product = products.filter((element) => {
     return element._id == id;
-
   });
 
-  console.log(product)
+  console.log(product);
 
-  let productPage = `<h3 class="productName">${product[0].name}</h3>
-  <p class="price">${product[0].price}</p>
+  let productPage = `<section><h3 class="productName">${product[0].name}</h3>
+  <img src="${product[0].image}" alt="" class="productimage" width="40%">
+  <p class="price">${product[0].price}</p></section>
+  <section>
+  <h3>Description</h3>
+  <h3>Material used</h3>
+  <p class="description">${product[0].material}</p>
+  <p class="description">${product[0].description}</p>
   
-  <h3>Description</h5>
-  <p class="description">${product[0].description}</p>`;
+  
+  <div class="addminus">
+          <div id="poke1"><button class="plus">-</button></div>
+          <div id="counter">1</div>
+          <div id="poke2"><button class="plus">+</button></div>
+          <div>
+            <button class="cart"><b>Add to Cart</b></button>
+          </div></section>`;
 
-  let detailProduct = document.getElementsByClassName('detail-product');
+  let detailProduct = document.getElementsByClassName("detail-product");
   detailProduct[0].innerHTML = productPage;
-
-
-  // console.log(product);
-  // document.querySelector("a").href = "productpage.html?id=" + product.id;
-  // document.querySelector(".productName").textContent = product.productname;
-
-  // document.querySelector(".productimage").src = product.image;
-  // document.querySelector(".price").textContent = `${product.price}`;
-
-  // document.querySelector(".description").textContent = product.description;
 }
 var poke1 = document.getElementById("poke1");
 var cmp = document.getElementById("counter");
