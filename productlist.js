@@ -35,7 +35,7 @@ function handleProductList(data) {
   productTemplate[0].innerHTML = productHtml;
 }
 
-
+/*contact*/
 
 function validate(){
   var name = document.getElementById("name").value;
